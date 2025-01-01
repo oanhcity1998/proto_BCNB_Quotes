@@ -7,16 +7,16 @@ import Otto_icon from '../Assets/Otto.png'
 export const Randomquotes = () => {
 
     const [quoteText, setQuoteText] = useState("");
-    const [author, setAuthor] = useState("");
+    const [author, setauthor] = useState("");
 
     async function getQuotes() {
         try{
-            const reponse = await fetch("http://api.quotable.io/random");
+            const reponse = await fetch("https://quotes-api-self.vercel.app/quote");
             const data = await reponse.json();
 
-            const {content, author} = data;
-            setQuoteText(`"${content}"`)
-            setAuthor(`${author}`)
+            const {quote, author} = data;
+            setQuoteText(`"${quote}"`)
+            setauthor(`${author}`)
         }
         catch(error){
             console.error("Error fetching data:" , error)
