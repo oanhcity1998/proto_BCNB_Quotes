@@ -47,7 +47,7 @@ export const Randomquotes = () => {
                     <img className='Otto_icon' src={Otto_icon} alt="" />
                     <img className='reload_icon' onClick={getQuotes} src={reload_icon} alt="" />
                 </div>
-                <div className="author">{author}</div>
+                <div className="author">- {author} -</div>
                 
             </div>
         </div>
