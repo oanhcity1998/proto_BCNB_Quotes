@@ -11,7 +11,7 @@ export const Randomquotes = () => {
 
     async function getQuotes() {
         try{
-            const reponse = await fetch("https://quotes-api-self.vercel.app/quote");
+            const reponse = await fetch("https://proto-quotes-api.vercel.app/v1/quote");
             const data = await reponse.json();
 
             const {quote, author} = data;
