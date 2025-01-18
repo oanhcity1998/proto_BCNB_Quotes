@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './RandomQuotes.css'
 import reload_icon from '../Assets/reload.png'
-import Otto_icon from '../Assets/Otto.png'
+import Server_icon from '../Assets/logo.png'
 // import { use } from 'react'
 
 export const Randomquotes = () => {
@@ -44,7 +44,7 @@ export const Randomquotes = () => {
             <div className="line"></div>
             <div className="bottom">
                 <div className="icons">
-                    <img className='Otto_icon' src={Otto_icon} alt="" />
+                    <img className='server_icon' src={Server_icon} alt="" />
                     <img className='reload_icon' onClick={getQuotes} src={reload_icon} alt="" />
                 </div>
                 <div className="author">- {author} -</div>

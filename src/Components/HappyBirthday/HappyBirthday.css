@@ -1,0 +1,16 @@
+
+.bd_button{
+    position:fixed;
+    top: 2%;
+    right: 1%;
+
+    background-color: #fff;
+    border-radius: 60%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.bd_button img{
+    border-radius: 60%;
+    /* padding: 10%; */
+}
