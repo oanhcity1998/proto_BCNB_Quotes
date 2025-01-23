@@ -1,10 +1,8 @@
 import './App.css';
 import {HappyBirthday} from './Components/HappyBirthday/HappyBirthday';
 import { Randomquotes } from './Components/RandomQuotes/RandomQuotes';
-import {Clock} from './Components/Clock/Clock'
-import { TetHoliday } from './Components/TetHoliday/TetHoliday';
 import { TetHoliday2 } from './Components/TetHoliday/TetHoliday2';
-import { BrowserRouter as Router, Routes, Route, Link, NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 function App() {
   return (
