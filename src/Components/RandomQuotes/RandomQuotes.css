@@ -1,12 +1,13 @@
-.container{
+.quote_container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: auto;
     margin-top: 2%;
     background-color: #625ac4;
     width: 60%;
-    max-width: 800px;
+    /* width: 60%; */
     border-radius: 15px;
 }
 
@@ -17,8 +18,18 @@
     text-align: center;
 }
 
+.under_quote{
+    width: 100%;
+}
+
+.line_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .line{
-    width: 680px;
+    width: 80%;
     height: 1.5px;
     background-color: white;
 }
@@ -28,7 +39,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 0px;
+    margin: 30px 20px;
 }
 
 .author{
@@ -50,4 +61,76 @@
 
 .server_icon{
     border-radius: 50%;
+}
+
+.quote_button_container{
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content:center; */
+    /* align-items:end; */
+
+    cursor: pointer;
+    /* overflow: hidden; */
+    /* background-color: #000; */
+}
+
+.wrap_icon{
+    box-sizing: border-box;
+    background: green;
+    border-radius: 50%;
+
+    /*MUST BE 64-60 */
+    width: 64px;
+    height: 64px;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    /* top right corner */
+    position: fixed;
+    top: 2%;
+    right: 1%;
+    
+}
+
+
+.quote_icon_container{
+    display: flex;
+    border-radius: 50%;
+    justify-content:center;
+    align-items:center;
+
+    /*MUST BE 64-60 */
+    height: 60px;
+    width: 60px;
+
+
+    padding: 0.5%;
+    overflow: hidden;
+    border: 2px solid #fff;
+}
+
+.home_icon{
+    max-width: 100%;
+}
+
+@media (max-width: 800px){
+    .line{
+        margin: 5px;
+    }
+
+    .bottom{
+        margin: 20px;
+    }
+    .icons{
+        gap: 20px;
+    }
+    .quote, .icons img{
+        font-size: 12px;
+        height: 15px;
+    }
+    .author{
+        font-size: 10px;
+    }
 }

@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import './RandomQuotes.css'
 import reload_icon from '../Assets/reload.png'
 import Server_icon from '../Assets/logo.png'
+import { TetHoliday } from '../TetHoliday/TetHoliday'
+import { Clock } from '../Clock/Clock'
+
 // import { use } from 'react'
 
 export const Randomquotes = () => {
@@ -39,19 +42,24 @@ export const Randomquotes = () => {
 
   return (
     <div className='container'>
-        <div className="quote">{quoteText}</div>
-        <div>
-            <div className="line"></div>
-            <div className="bottom">
-                <div className="icons">
-                    <img className='server_icon' src={Server_icon} alt="" />
-                    <img className='reload_icon' onClick={getQuotes} src={reload_icon} alt="" />
+    <Clock/>
+        <div className='quote_container'>
+            <TetHoliday/>
+            <div className="quote">{quoteText}</div>
+            <div className='under_quote'>
+                <div className='line_container'>
+                    <div className="line"></div>
                 </div>
-                <div className="author">- {author} -</div>
-                
+                <div className="bottom">
+                    <div className="icons">
+                        <img className='server_icon' src={Server_icon} alt="" />
+                        <img className='reload_icon' onClick={getQuotes} src={reload_icon} alt="" />
+                    </div>
+                    <div className="author">- {author} -</div>
+                    
+                </div>
             </div>
         </div>
-        
     </div>
   )
 }

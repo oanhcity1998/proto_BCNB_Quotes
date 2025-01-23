@@ -5,7 +5,7 @@
     /* background-color: #fff; */
     margin: 5% 20% 0 20%;
     font-family: "Poppins", sans-serif;
-    color: #fff;
+    color: white;
 }
 
 .clock{
@@ -13,8 +13,8 @@
     justify-content: center;
     align-items: center;
 
-    font-size: 10vh;
-    font-weight: 500;
+    font-size: 13vh;
+    font-weight: 700;
 }
 
 .rectangle{
@@ -23,7 +23,25 @@
 }
 
 .colon{
-    color: grey;
+    color: #eee8cd;
     /* padding: 3%; */
-    font-size: 400;
+    font-weight: 600;
+    font-size: 9vh;
+}
+
+.day{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 125%;
+    color: #0018a8;
+}
+
+.date{
+    margin: 0 0.25% 0 0.5% ;
+}
+
+.month{
+    margin: 0 0.5% 0 0.25%;
 }
