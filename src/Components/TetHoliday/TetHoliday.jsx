@@ -1,6 +1,5 @@
 import React from 'react'
 import tet_icon from '../Assets/2025.png'
-import red_ribbon from '../Assets/red_ribbon.png'
 import {useNavigate} from 'react-router-dom'
 
 export function TetHoliday() {
